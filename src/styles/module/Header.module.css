@@ -1,3 +1,5 @@
+/* src/styles/module/Header.module.css */
+
 .header {
     @apply w-full p-6 flex justify-between items-center fixed top-0 left-0 z-50 transition-colors duration-300;
 }
@@ -16,4 +18,14 @@
 
 .navLink {
     @apply text-lg text-gray-300 hover:text-white transition-colors;
+}
+
+/* Classe para o header quando a página é rolada */
+.headerActive {
+    @apply bg-gray-800 shadow-lg;
+}
+
+/* Classe para o menu mobile que ocupa o ecrã todo */
+.mobileNav {
+    @apply fixed inset-0 bg-gray-900 bg-opacity-95 flex flex-col items-center justify-center gap-8 md:hidden;
 }
