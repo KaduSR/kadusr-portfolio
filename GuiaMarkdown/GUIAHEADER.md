@@ -1,4 +1,4 @@
-# Guia de Estudo (Final): Componente Header Completo
+# Guia de Estudo: Componente Header Completo
 
 **Objetivo:** Ter um componente `Header` totalmente funcional, responsivo, com efeito de scroll e menu mobile, construído com base nos princípios de Código Limpo.
 
@@ -8,9 +8,9 @@
 
 ---
 
-### **1. Código Final para `Header.module.css`**
+### **1. O Ficheiro de Estilos (`Header.module.css`)**
 
-Este ficheiro contém todas as classes de estilo necessárias para o `Header`, incluindo os estados de scroll e o menu mobile. Estas classes são aplicadas usando a diretiva `@apply` do Tailwind CSS, mantendo o nosso CSS semântico e organizado.
+Este ficheiro centraliza todos os estilos do nosso componente. Usamos nomes de classe semânticos (como `.header`, `.logo`) e, dentro deles, aplicamos as classes utilitárias do Tailwind CSS com a diretiva `@apply`. Isto mantém o nosso JSX limpo e o nosso CSS organizado e legível.
 
 **Ação:** Copie este conteúdo para o seu ficheiro `src/styles/module/Header.module.css`.
 
@@ -37,16 +37,42 @@ Este ficheiro contém todas as classes de estilo necessárias para o `Header`, i
   @apply text-lg text-gray-300 hover:text-white transition-colors;
 }
 
-/* Classe para o header quando a página é rolada */
 .headerActive {
   @apply bg-gray-800 shadow-lg;
 }
 
-/* Classe para o menu mobile que ocupa o ecrã todo */
 .mobileNav {
   @apply fixed inset-0 bg-gray-900 bg-opacity-95 flex flex-col items-center justify-center gap-8 md:hidden;
 }
 ```
+
+#### **Explicação Detalhada do `Header.module.css`**
+
+* **`.header`**:
+    * `@apply w-full p-6`: Define a largura como 100% (`w-full`) e adiciona um `padding` (espaçamento interno) de 24px (`p-6`).
+    * `@apply flex justify-between items-center`: Ativa o Flexbox. `flex` alinha os itens horizontalmente, `justify-between` empurra a logo para a esquerda e a navegação/menu para a direita, e `items-center` alinha tudo verticalmente ao centro.
+    * `@apply fixed top-0 left-0 z-50`: Fixa o header no topo da página. `fixed` o retira do fluxo normal, `top-0` e `left-0` o posicionam no canto superior esquerdo, e `z-50` garante que ele fique por cima de quase todos os outros conteúdos.
+    * `@apply transition-colors duration-300`: Adiciona uma transição suave de 300ms quando a cor de fundo muda (efeito de scroll).
+
+* **`.logo`**:
+    * `@apply text-2xl font-bold text-white`: Define o tamanho da fonte como `2xl` (24px), o peso como `bold` (negrito) e a cor como branca.
+
+* **`.menuButton`**:
+    * `@apply md:hidden z-50 cursor-pointer`: `md:hidden` é a chave da responsividade. Significa que este botão estará visível por padrão, mas será **escondido** (`hidden`) em ecrãs de tamanho médio (`md`) para cima. `z-50` o mantém acima de outros elementos e `cursor-pointer` muda o cursor do rato para uma mãozinha.
+
+* **`.nav`**:
+    * `@apply hidden md:flex gap-8`: O oposto do botão. A navegação está **escondida** por padrão (`hidden`) e só se torna visível (`md:flex`) em ecrãs médios para cima. `gap-8` adiciona um espaçamento de 32px entre os links.
+
+* **`.navLink`**:
+    * `@apply text-lg ...`: Define o estilo para cada link, com um efeito `hover` que muda a cor do texto para branco quando o rato passa por cima.
+
+* **`.headerActive`**:
+    * `@apply bg-gray-800 shadow-lg`: Esta classe é adicionada via JavaScript. Ela define uma cor de fundo cinza escuro e uma sombra (`shadow-lg`) subtil para quando o utilizador rola a página.
+
+* **`.mobileNav`**:
+    * `@apply fixed inset-0 ...`: Estilo para o menu que ocupa o ecrã todo. `fixed` e `inset-0` fazem-no cobrir o ecrã.
+    * `@apply bg-gray-900 bg-opacity-95`: Um fundo quase opaco.
+    * `@apply flex flex-col items-center justify-center gap-8`: Usa Flexbox para empilhar os links verticalmente (`flex-col`) e alinhá-los perfeitamente no centro do ecrã.
 
 ---
 
