@@ -1,0 +1,18 @@
+{
+  "provider": {
+    "type": "gemini"
+  },
+  "commit": {
+    "commitLanguage": "English",
+    "commitFormat": "conventional",
+    "onlyStagedChanges": true,
+    "autoCommit": false,
+    "autoPush": false
+  },
+  "gemini": {
+    "model": "gemini-1.5-flash"
+  },
+  "telemetry": {
+    "enabled": false
+  }
+}
