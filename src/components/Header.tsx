@@ -14,7 +14,7 @@ export const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      window.scrollY > 50;
+      setIsActive(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
