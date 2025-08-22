@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "../styles/module/ProfileCard.module.css";
 import { profileData, technologies } from "../data";
+import minhaFoto from "../assets/minha-foto.png";
 
 export const ProfileCard = () => {
   return (
     <section id="profile" className={styles.card}>
       <img
-        src="../assets/minha-foto.png"
+        src={minhaFoto}
         alt={profileData.name}
         className={styles.avatar}
       />
