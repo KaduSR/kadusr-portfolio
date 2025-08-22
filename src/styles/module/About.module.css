@@ -1,3 +1,5 @@
+@import "tailwindcss/utilities";
+
 .aboutSection {
     @apply w-full text-center px-4 py-16;
 }

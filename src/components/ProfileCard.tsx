@@ -1,4 +1,4 @@
-import styles from "@/styles/ProfileCard.module.css";
+import styles from "../styles/module/ProfileCard.module.css";
 import React from "react";
 import { profileData, technologies } from "../data";
 
@@ -11,10 +11,10 @@ export const ProfileCard = () => {
           className={styles.avatar}
         />
 
-        <h1 className="{styles.name}">{profileData.name}</h1>
-        <p className="{styles.handle}">{profileData.handle}</p>
-        <p className="{styles.title}">{profileData.title}</p>
-        <div className="{styles.location}">
+        <h1 className={styles.name}>{profileData.name}</h1>
+        <p className={styles.handle}>{profileData.handle}</p>
+        <p className={styles.title}>{profileData.title}</p>
+        <div className={styles.location}>
           {/* TODO: Add a map icon */}
           <span>{profileData.location}</span>
         </div>

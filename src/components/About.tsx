@@ -1,4 +1,4 @@
-import styles from "@/styles/module/About.module.css";
+import styles from "../styles/module/About.module.css";
 import { profileData } from "../data";
 import React, { useState } from "react";
 

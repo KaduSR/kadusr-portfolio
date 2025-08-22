@@ -1,5 +1,7 @@
+@import "tailwindcss/utilities";
+
 .card {
-    @apply pt-32 p-8 flex flex-col items-center texter-center;
+    @apply pt-32 p-8 flex flex-col items-center text-center;
 }
 
 .avatar {
