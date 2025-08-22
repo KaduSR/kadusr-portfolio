@@ -2,16 +2,13 @@ import React from "react";
 import styles from "../styles/module/ProfileCard.module.css";
 import { profileData, technologies } from "../data";
 import minhaFoto from "../assets/minha-foto.png";
+import iconMap from "../assets/icons/map.svg"; 
 
 export const ProfileCard = () => {
   return (
     <section id="profile" className={styles.card}>
       <img
-<<<<<<< HEAD
         src={minhaFoto}
-=======
-        src="../assets/minha-foto.png"
->>>>>>> b2f5407 (docs: add About section to portfolio)
         alt={profileData.name}
         className={styles.avatar}
       />
@@ -22,7 +19,7 @@ export const ProfileCard = () => {
       <p className={styles.title}>{profileData.currentRole}</p>
 
       <div className={styles.location}>
-        {/* TODO: Add a map icon */}
+        <img src={iconMap} alt="Localização" className={styles.icon} />
         <span>{profileData.location}</span>
       </div>
 

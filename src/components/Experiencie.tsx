@@ -1,5 +1,4 @@
 import styles from "../styles/module/Experiencie.module.css";
-<<<<<<< HEAD
 
 import React from "react";
 import { experiences } from "../data";
@@ -24,5 +23,3 @@ export const Experience = () => {
     </section>
   );
 };
-=======
->>>>>>> b2f5407 (docs: add About section to portfolio)
