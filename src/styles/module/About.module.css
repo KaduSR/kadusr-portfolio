@@ -1,0 +1,17 @@
+.aboutSection {
+    @apply w-full text-center px-4 py-16;
+}
+
+.title {
+    @apply text-3xl font-bold mb-4;
+}
+
+.text {
+    /* Limita a largura do texto para melhor legibilidade e centra-o */
+    @apply max-w-2xl mx-auto text-gray-300 leading-relaxed;
+}
+
+.readMoreButton {
+    /* Estilo para o botão "Ler mais", com um hover subtil */
+    @apply text-green-400 font-semibold mt-4 inline-block hover:text-green-300 transition-color;
+}
