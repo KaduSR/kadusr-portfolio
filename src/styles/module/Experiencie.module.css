@@ -1,3 +1,37 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+/* src/styles/module/Experiencie.module.css */
+@import "tailwindcss";
+
+.experienceSection {
+    @apply w-full py-16;
+}
+
+.title {
+    @apply text-3xl font-bold text-center mb-12;
+}
+
+.timeline {
+    /* O contentor principal da linha do tempo, com uma linha à esquerda */
+    @apply relative max-w-2xl mx-auto border-l-2 border-gray-700 pl-10;
+}
+
+.timelineItem {
+    /* Cada item na linha do tempo, com espaço abaixo */
+    @apply mb-10;
+}
+
+.timelineDot {
+    /* A "bola" que marca cada evento na linha do tempo */
+    @apply absolute w-4 h-4 bg-green-500 rounded-full -left-2 top-1;
+}
+
+.role {
+    @apply text-xl font-semibold text-white;
+}
+
+.companyAndPeriod {
+    @apply block text-sm text-gray-400 mb-2;
+}
+
+.description {
+    @apply text-gray-300;
+}

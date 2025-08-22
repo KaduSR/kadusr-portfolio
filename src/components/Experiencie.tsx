@@ -1,1 +1,1 @@
-import { Experience } from "@/styles/Experience.module.css";
+import styles from "../styles/module/Experiencie.module.css";

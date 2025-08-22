@@ -1,5 +1,5 @@
 /* src/styles/module/Header.module.css */
- @import "tailwindcss/utilities";
+@import "tailwindcss";
 
 .header {
     @apply w-full p-6 flex justify-between items-center fixed top-0 left-0 z-50 transition-colors duration-300;
