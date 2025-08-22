@@ -7,11 +7,7 @@ export const ProfileCard = () => {
   return (
     <section id="profile" className={styles.card}>
       <img
-<<<<<<< HEAD
         src={minhaFoto}
-=======
-        src="../assets/minha-foto.png"
->>>>>>> b2f5407 (docs: add About section to portfolio)
         alt={profileData.name}
         className={styles.avatar}
       />
