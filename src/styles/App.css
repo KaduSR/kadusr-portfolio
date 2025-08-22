@@ -4,27 +4,8 @@
   padding: 2rem;
   text-align: center;
 }
-.profile-card-container {
-  display: flex;
-    /* Ativa o layout Flexbox */
-    justify-content: center;
-    /* Centraliza os cards horizontalmente */
-    align-items: center;
-    /* Centraliza os cards verticalmente */
-    flex-wrap: wrap;
-    /* Permite que os cards quebrem para a próxima linha */
-    gap: 2rem;
-    /* Adiciona um espaço entre os cards */
-    margin-top: 2rem;
-    /* Adiciona uma margem no topo */
-}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }

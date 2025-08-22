@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
 .card {
-    @apply pt-32 p-8 flex flex-col items-center text-center mx-auto;
-    border: 1px solid #29292E;
-    background-color: #1A1A1E;
+    @apply w-full pt-32 p-8 flex flex-col items-center text-center mx-auto;
+  
 }
 
 .avatar {
