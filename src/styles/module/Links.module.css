@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "tailwindcss";
 
 .linksSection {
@@ -16,3 +17,6 @@
     /* Efeito de hover para os ícones */
     @apply text-gray-300 hover:text-green-500 transition-transform hover:scale-110;
 }
+=======
+@import "tailwindcss";
+>>>>>>> b2f5407 (docs: add About section to portfolio)
