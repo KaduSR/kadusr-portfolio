@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .card {
-    @apply w-[378px] min-[700px]:w-[1440px] pt-32 p-8 flex flex-col items-center text-center mx-auto;
+    @apply pt-32 p-8 flex flex-col items-center text-center mx-auto;
     border: 1px solid #29292E;
     background-color: #1A1A1E;
 }

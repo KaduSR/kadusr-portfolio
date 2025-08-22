@@ -1,8 +1,11 @@
 #root {
-  max-width: 1426px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+.profile-card-container {
+  
 }
 
 .logo {
@@ -35,7 +38,6 @@
 
 .card {
   padding: 2em;
-  max-width: 1426px;
 }
 
 .read-the-docs {
