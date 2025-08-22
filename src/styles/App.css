@@ -5,7 +5,18 @@
   text-align: center;
 }
 .profile-card-container {
-  
+  display: flex;
+    /* Ativa o layout Flexbox */
+    justify-content: center;
+    /* Centraliza os cards horizontalmente */
+    align-items: center;
+    /* Centraliza os cards verticalmente */
+    flex-wrap: wrap;
+    /* Permite que os cards quebrem para a próxima linha */
+    gap: 2rem;
+    /* Adiciona um espaço entre os cards */
+    margin-top: 2rem;
+    /* Adiciona uma margem no topo */
 }
 
 .logo {
