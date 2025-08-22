@@ -15,5 +15,5 @@
 
 .readMoreButton {
     /* Estilo para o botão "Ler mais", com um hover subtil */
-    @apply text-green-400 font-semibold mt-4 inline-block hover:text-green-300 transition-color;
+    @apply text-green-400 font-semibold mt-4 inline-block hover:text-green-300 transition-colors;
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/module/Header.module.css";
+import { ReactComponent as Logo } from "../assets/icon/Logo.svg";
 
 const navItems = [
   { label: "Sobre", href: "#about" },
@@ -22,13 +23,13 @@ export const Header = () => {
     };
   }, []);
 
-  const headerClasses = `${styles.header} ${isActive ? styles.active : ""}`;
+  const headerClasses = `${styles.header} ${isActive ? styles.headerActive : ""}`;
 
   return (
     <>
       <header className={headerClasses}>
         <a href="#">
-          <span className={styles.logo}>Kadu Dev</span>
+          <Logo className={styles.logo} />
         </a>
 
         <nav className={styles.nav}>

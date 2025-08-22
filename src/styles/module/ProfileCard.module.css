@@ -25,7 +25,7 @@
 }
 
 .techPillsContainer {
-    @apply flex flex-wrap justify-center gap-2 mt-6;
+    @apply grid grid-cols-3 gap-2 mt-6;
 }
 
 .techPill {

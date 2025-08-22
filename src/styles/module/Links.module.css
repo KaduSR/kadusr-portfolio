@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+.linksSection {
+    @apply flex flex-col items-center gap-4 py-8;
+}
+
+.title {
+    @apply text-gray-400;
+}
+
+.iconContainer {
+    @apply flex gap-6;
+}
+
+.iconLink {
+    /* Efeito de hover para os ícones */
+    @apply text-gray-300 hover:text-green-500 transition-transform hover:scale-110;
+}

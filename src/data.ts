@@ -8,6 +8,8 @@ export const profileData = {
   links: {
     linkedin: "https://www.linkedin.com/in/kaduesr",
     github: "https://github.com/KaduSR",
+    instagram: "https://www.instagram.com/kadusr",
+    whatsapp: "https://wa.me/5524992175577",
   },
   about: {
     short:
