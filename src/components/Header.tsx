@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/module/Header.module.css";
+import Logo from "../assets/icons/Logo.svg"; 
 
 const navItems = [
   { label: "Sobre", href: "#about" },
@@ -28,7 +29,7 @@ export const Header = () => {
     <>
       <header className={headerClasses}>
         <a href="#">
-          
+          <img src={Logo} alt="Logo" className={styles.logo} />
         </a>
 
         <nav className={styles.nav}>
